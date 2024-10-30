@@ -225,18 +225,3 @@ h1 {
     cursor: pointer;
     transition: transform 0.3s;
 }
-
-.baseline-image {
-    position: absolute;
-    bottom: 0; /* Aligns the image at the bottom of the greeting container */
-    left: 0;
-    right: 0; /* Stretch the image to full width */
-    display: flex; /* Center the image */
-    justify-content: center;
-}
-
-.baseline-image img {
-    width: 70%; /* Makes the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    opacity: 0.5; /* Adjust opacity for transparency */
-}
