@@ -200,6 +200,20 @@ h1 {
         font-size: 0.9rem; /* Further adjust button font size */
     }
 }
+@media (max-width: 300px) {
+    h1 {
+        font-size: 1.5rem; /* Further adjust font size for smaller screens */
+    }
+
+    .logo img {
+        width: 50px; /* Reduce logo size on very small screens */
+    }
+
+    .view-button {
+        padding: 0.5rem 1rem; /* Further adjust button size for small screens */
+        font-size: 0.9rem; /* Further adjust button font size */
+    }
+}
 
 @keyframes flicker {
     0%, 100% { transform: translateX(-50%) scale(1); opacity: 0.9; }
