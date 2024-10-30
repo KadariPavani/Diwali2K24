@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.landing-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #22434c;
+    color: white;
+    text-align: center;
+}
+
+.main-content {
+    display: none;
+    min-height: 100vh;
+    background: #22434c;
+    padding: 2rem;
+    color: white;
+    position: relative;
+}
+
+.greeting-container {
+    max-width: 1200px;
+    min-height: 680px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    position: relative;
+}
+
+.corner-design {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: white;
+}
+
+.logo {
+  position: absolute; /* Position them absolutely */
+  top: 20px; /* Adjust the distance from the top */
+}
+
+.left-logo {
+  left: 30px; /* Position on the left */
+}
+
+.right-logo {
+  right: 30px; /* Position on the right */
+}
+
+.logo img {
+  width: 100px; /* Set a width for the logos */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.top-left {
+    top: 10px;
+    left: 10px;
+    clip-path: polygon(100% 0, 0 100%, 0 0);
+}
+
+.top-right {
+    top: 10px;
+    right: 10px;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+.bottom-left {
+    bottom: 10px;
+    left: 10px;
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+.bottom-right {
+    bottom: 10px;
+    right: 10px;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-right: 50%;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+
+.icon-circle {
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-image: url('pngtree-rustic-golden-circle-flourish-frame-border-ornament-vector-illustration-png-image_2493914-removebg-preview.png'); /* Path to your border image */
+  background-size: cover; /* Ensure the image covers the whole circle */
+  position: relative; /* For absolute positioning of inner image */
+}
+
+.icon-circle img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  position: absolute; /* Position it relative to the parent */
+}
+
+.feature-content h3 {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.feature-content p {
+    color: #cfcfcf;
+    font-size: 0.9rem;
+}
+
+.diya-container {
+    position: absolute;
+    right: 10%;
+    top: 35%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 100px;
+}
+
+.diya {
+    width: 100%;
+    height: 220%;
+}
+
+@media (max-width: 768px) {
+  .diya-container {
+      right: 2%; /* Adjusts the right positioning for smaller screens */
+      top: 30%; /* Adjusts the top positioning for smaller screens */
+      width: 70%; /* Makes the container wider on smaller screens */
+  }
+}
+
+@keyframes flicker {
+    0%, 100% { transform: translateX(-50%) scale(1); opacity: 0.9; }
+    50% { transform: translateX(-50%) scale(1.1); opacity: 1; }
+}
+
+.sparkle {
+    position: fixed;
+    pointer-events: none;
+    background: #ffd700;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+}
+
+.view-button {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background: #ffd700;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.baseline-image {
+  position: absolute;
+  bottom: 0; /* Aligns the image at the bottom of the greeting container */
+  left: 0;
+  right: 0; /* Stretch the image to full width */
+  display: flex; /* Center the image */
+  justify-content: center;
+}
+
+.baseline-image img {
+  width: 70%; /* Makes the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  opacity: 0.5; /* Adjust opacity for transparency */
+}
