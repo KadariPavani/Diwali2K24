@@ -192,7 +192,7 @@ h1 {
     }
 
     .logo img {
-        max-width: 80px; /* Reduce logo size on very small screens */
+        max-width: 70px; /* Reduce logo size on very small screens */
     }
 
     .view-button {
